@@ -19,7 +19,7 @@ jobs:
           REPOSITORIES: |
             particuleio/sync-test
           WORKFLOW_FILES: |
-            .github/
+            .github
             .tools-version
             .releaserc
             .python-version
