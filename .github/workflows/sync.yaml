@@ -17,9 +17,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           PULL_REQUEST: true
           REPOSITORIES: |
-            particuleio/sync-test
+            particuleio/
           WORKFLOW_FILES: |
-            .github
+            .github/CONTRIBUTING.md
+            .github/renovate.json
+            .github/workflows/pr-title.yaml
+            .github/workflows/pre-commit.yaml
+            .github/workflows/release.yaml
+            .github/workflows/renovate.yaml
+            .github/workflows/stale-actions.yaml
             .tools-version
             .releaserc
             .python-version
